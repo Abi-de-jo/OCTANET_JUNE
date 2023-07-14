@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: pointer
+}
+ 
+.container{
+   
+ background: url(pexels-mart-production-7718677.jpg);
+ height: 100vh;
+  
+ background-size: cover;
+background-repeat: no-repeat;
+   font-family: sans-serif;
+   background-color: black;
+background-position: center;
+
+   
+   
+ 
+   
+}
+
+ 
+ 
+
+
+
+.todoapp{
+  
+margin-left: 370px;
+background: linear-gradient(rgba(0, 1, 1, 0.655),rgba(0, 0, 0, 0.66));
+width: 750px;
+ 
+margin-top: 100px;
+position: absolute;
+border-radius: 40px;
+ 
+ 
+
+}
+ .todoapp h2{
+
+    font-size: 28px;
+    margin-left: 300px;
+    margin-top: -50px;
+    color: rgb(242, 255, 0);
+    animation: glow 1s  ease-in-out infinite alternate;
+   
+    
+ }
+
+ @keyframes glow {
+   from {
+     
+     text-shadow: 0 0 30px #f60505, 0 0 20px #fb0000, 0 0 30px #eeff00, 0 0 40px #00dee6, 0 0 50px #eeff00, 0 0 6px #d5ff01, 0 0 70px #ff0000;
+   }
+   
+   to {
+     text-shadow: 0 0 10pxrgb(29, 250, 0)ff, 0 0 30px #4dffa6, 0 0 40px #fff34d, 0 0 50px #e7ff4d, 0 0 60px #f3ff4d, 0 0 70px #4dff74, 0 0 80px #71ff4d;
+   }
+ }
+
+ 
+ .todoapp h2 img{
+    width: 40px;
+    margin-top: 130px;
+ }
+
+ .row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    width: 300px;
+    padding-left: 20px;
+    height: 40px;
+    margin-left: 250px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+
+   
+    
+ }
+  input{
+ background:   transparent;
+ border : none;
+ outline: none;
+ 
+ cursor: text;
+ 
+ 
+
+ 
+ 
+
+
+ }
+ ul{
+   margin-left: -100px;
+ }
+
+ ul li{
+
+list-style: none;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 1.3em;
+padding-left: 350px;
+font-variant: initial;
+user-select: none;
+font-weight: bold;
+position:  relative;
+margin-top: 30px;
+margin-bottom: 20px;
+color: white;
+ 
+ 
+ }
+ ul .a{
+
+   text-decoration: line-through;
+   color: rgb(41, 184, 1);
+  
+ }
+
+ ul .a::before{
+   background-image: url(checked.png);
+   
+   
+ }
+  
+
+ ul li span{
+  
+   margin-left: 170px;
+   border-radius: 50%;
+    width: 35px;
+    text-align: center;
+    right: 0;
+    margin-right: 90px;
+  
+   padding-left: 2px;
+   padding-top: -6px;
+   position: absolute;
+   font-size: 29px;
+   margin-top: -4px;
+   color: rgb(255, 255, 255);
+    
+ }
+  
+
+
+ 
+ul li span:hover{
+
+   color: rgb(255, 0, 0);
+    font-size: 50px;
+    margin-top: -18px;
+    
+    
+   transition: .2s;
+   position: absolute;
+  
+
+  
+}
+
+
+ ul li::before
+ {
+
+
+   content: '';
+   position: absolute;
+   background-image: url(unchecked.png);
+   color: rgb(252, 252, 252);
+   top: 2px;
+   left: 300px;
+   border-radius: 90%;
+   width: 28px;
+   height: 28px;
+   background-size: cover;
+
+ }
+ button{
+
+    background: none;
+    background-color: rgb(0, 255, 102);
+    width: 70px;
+    border-radius: 30px;
+    margin-left: 50px;
+    height: 40px;
+ }
+ 
+
+
+
+
+
+
