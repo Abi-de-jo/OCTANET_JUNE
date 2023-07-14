@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animation and New Window</title>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      animation: myAnimation 2s forwards;
+    }
+    
+    @keyframes myAnimation {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(200px); }
+    }
+  </style>
+  <script>
+    function openNewWindow() {
+      setTimeout(function() {
+        window.open('https://www.example.com');
+      }, 10); // 2000ms or 2 seconds (adjust as needed)
+    }
+  </script>
+</head>
+<body>
+  <div class="box" onclick="openNewWindow()"></div>
+</body>
+</html>
