@@ -1,0 +1,148 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-image:linear-gradient(rgba(3, 0, 0, 0.681),rgba(0, 0, 0, 0.796)), url(pexels-hasan-albari-1229861.jpg);
+   
+    background-size: cover;
+    background-position: center;
+   
+    object-fit: contain;
+    min-height: 100vh;
+    width: 100%;
+
+}
+
+
+
+.row{
+
+    padding: 0px;
+    width: 100%;
+
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+
+justify-content: space-between;
+align-items: center;
+padding: 10px 0px;
+object-fit: contain;
+
+
+}
+ 
+.navbar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px ;
+
+}
+
+.navbar ul li a{
+
+    padding: 10px 25px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    list-style-type: none;
+}
+
+.navbar ul li{
+    list-style-type: none;
+}
+
+
+.navbar ul li a:hover{
+    background-color: lightsalmon;
+    border-radius: 20px;
+    box-shadow:0px 0px 30px red0px 0px 30px red ;
+}
+
+
+.navbar h1{
+    font-size: 3em;
+    color: white;
+
+}
+
+.navbar h1 span{
+    transition:0.4s 
+    ;
+}
+.navbar h1{
+    font-size:80px ;
+    color :rgb(255, 255, 255);
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+      
+      text-shadow: 0 0 30px #a5ffdb, 0 0 20px #00f7fb, 0 0 30px #32e9e9, 0 0 40px #00dee6, 0 0 50px #00f7ff, 0 0 6px #01d5ff, 0 0 70px #f700ff;
+    }
+    
+    to {
+      text-shadow: 0 0 10px rgb(29, 250, 0)ff, 0 0 30px #05eeff, 0 0 40px #4dffed, 0 0 50px #4de7ff, 0 0 60px #ff4dca, 0 0 70px #4dcaff, 0 0 80px #ff4de1;
+    }
+  }
+
+  .content
+  {
+
+    width: 100%;
+    min-height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .content h1{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 4em;
+
+  }
+
+  .content span{
+    color: rgb(96, 204, 247) ;
+    
+  }
+  .content button
+  {
+    background-color: #00dee6;
+    text-decoration: none;
+    padding: 10px 20px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin-top: 20px;
+    background-repeat: 20px;
+    transition: .3s ease-in;
+    color: black;
+
+  }
+
+  .content p{
+    color: white;
+    font-size: small;
+    font-family: sans-serif;
+
+
+  }
+
+  .content button:hover{
+    background-color: #00dee6
+    ;
+    box-shadow: inset -70px 0px 0px 0px blue
+    75px 0px 0px 0px blue;
+  }
